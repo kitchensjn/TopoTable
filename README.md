@@ -18,7 +18,7 @@ Backend of the map conversion. This code communicates with the GUI used to take 
 Frontend of the map conversion. This code communicates with the backend program used to take maps downloaded from 'terrain.party' and produce a '.csv' file with associated heights of each pillar to display map to scale. Running this code opens a new window with inputs used to set parameters for backend.
 
 ## TopoTable for Windows and TopoTable for OSX
-These are standalone applications created from the Python source files using pyinstaller. These applications should be able to run without other dependencies, acting as the most streamline way of using the program. **The latest version of TopoTable for Windows does not have a formatted GUI yet, stay tuned! (09/05/2019)**
+These are standalone applications created from the Python source files using pyinstaller. These applications should be able to run without other dependencies, acting as the most streamline way of using the program. **The latest version of TopoTable for Windows does not have a formatted GUI yet, but functionality should still be the same! (09/05/2019)**
 
 ### Instructions for Using These Applications
 1. Go to **'terrain.party'**
