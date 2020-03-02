@@ -36,3 +36,5 @@ These are standalone applications created from the Python source files using pyi
 I am currently seeking advice for how to bring this project into the next stages of development, including design and fabrication of a physical prototype. For information or questions about the project, feel free to contact me (**James Kitchens**) at kitchensjn@gmail.com.
 
 **Disclaimer: This project is not affiliated with 'terrain.party' in any way and only uses the website as it is an easy and consistent way of finding maps for many regions of the world.**
+
+****UPDATE 03/01/2020 : I am currently working to create a web application that will ultimately replace the standalone application described above. This application will be created through the Shiny package in R, which I used for a previous project (see marine-tardigrades repository). You will be able to find code for this new direction within the "web map" directory****
