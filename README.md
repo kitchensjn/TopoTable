@@ -8,7 +8,11 @@ Files within this directory relate to development of a software workflow for con
 
 # Shiny Application
 
-# Standalone Application
+Hosted through shinyapps.io at jkitchensf16.shinyapps.io/topotable, this is the most streamlined version of the application to date. Users can select a region of the word to download, including location and size, and download the respective raster from Amazon Web Services (AWS). This is conviently simple thanks to the elevatr package in R. The user can pick the number of pillars that make up their table and the physical size of each pillar (width/height). The application displays a preview of what your TopoTable will look like, and finally, if the user likes their selection, they can download the map as a .csv file which will be fed into the TopoTable.
+
+# Desktop Application
+
+The desktop application is Python code that has been converted into an executable for OSX and Windows. This is an older version of the application and for individuals who want to use custom maps rather than those pulled from AWS. In general, I would recommend trying the Shiny Application first before downloading and installing a version of the desktop application.
 
 ## Source Files and Previous Versions
 
