@@ -44,4 +44,4 @@ I am currently seeking advice for how to bring this project into the next stages
 ## Updates
 ****UPDATE 03/01/2020 : I am currently working to create a web application that will ultimately replace the standalone application described above. This application will be created through the Shiny package in R, which I used for a previous project (see marine-tardigrades repository). You will be able to find code for this new direction within the "Shiny Application" directory****
 
-****UPDATE 04/15/2020 : I have completed a basic version of the Shiny Web Application. This application is hosted at jkitchensf16.shinyapps.io/topotable. Source files can be found within the "Shiny Application" directory****
+****UPDATE 04/15/2020 : I have completed a basic version of the Shiny Web Application. Source files can be found within the "Shiny Application" directory. I decided to rewrite the backend functionality in R (rather than Python) so that it pairs more easily with Shiny. I found a set of packages that work well with geospatial data (raster, sp, rgdal, elevatr)****
