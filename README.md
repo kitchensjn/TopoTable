@@ -6,25 +6,25 @@ The TopoTable Project focuses around the development of a raised relief map tabl
 
 Files within this directory relate to development of a software workflow for converting maps into useable formats for the table and, ultimately, map display. Descriptions of the files found in this respository are found below:
 
-## Shiny Application
+# Shiny Application
 
-## Standalone Application
+# Standalone Application
 
-### Source Files and Previous Versions
+## Source Files and Previous Versions
 
-#### Deprecated Versions
+### Deprecated Versions
 This folder contains all of the deprecated versions of the GUI that I have created. These versions should still function, but may not directly follow current instructions and/or lack certain features. For most recent versions of the GUI, see below.
 
-#### Pixelate and Scale Map
+### Pixelate and Scale Map
 Backend of the map conversion. This code communicates with the GUI used to take maps downloaded from 'terrain.party' and produce a .csv file with associated heights of each pillar to display map to scale. In doing so, the program takes the higher resolution map and pixelates it to the resolution expected by the table. Grayscale values (elevation values) rescaled to the pillar heights based on the footprints of the original map and tables. File is saved in the directory of original maps.
 
-#### PyQt GUI
+### PyQt GUI
 Frontend of the map conversion. This code communicates with the backend program used to take maps downloaded from 'terrain.party' and produce a '.csv' file with associated heights of each pillar to display map to scale. Running this code opens a new window with inputs used to set parameters for backend.
 
-#### TopoTable for Windows and TopoTable for OSX
+## TopoTable for Windows and TopoTable for OSX
 These are standalone applications created from the Python source files using pyinstaller. These applications should be able to run without other dependencies, acting as the most streamline way of using the program. **The latest version of TopoTable for Windows does not have a formatted GUI yet, but functionality should still be the same! (09/05/2019)**
 
-#### Instructions for Using These Applications
+### Instructions for Using These Applications
 1. Go to **'terrain.party'**
 2. Find a region that you like, note the **footprint size of the region**, and click the button with a **cloud and downward arrow** to download
 3. Run the **TopoTable for [operating system]** application
