@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/kitchensjn/TopoTable/blob/master/TopoTableLogo.png">
+  <img src="https://github.com/kitchensjn/TopoTable/blob/master/TopoTableLogo.png" width="98" height="100">
 </p>
 
 The TopoTable Project focuses around the development of a raised relief map table made of moveable pillars, allowing the user to display many custom elevation maps. By doing this, I hope to bridge the gap between physical maps, which are tactile but generally static, and digital maps. The TopoTable has potential as an educational tool in a GIS classroom or museum, as well as a decorative piece (similar to a kinetic sculpture).
