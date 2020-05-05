@@ -27,9 +27,18 @@ server <- function(input, output, session) {
 
   output$plot <- renderPlot({
     if (!is.null(mapRaster$mapRaster)){
-      bottomLimit <- mean(values(mapRaster$mapRaster)) - 4*(sd(values(mapRaster$mapRaster)))
-      values(mapRaster$mapRaster)[which(values(mapRaster$mapRaster)<bottomLimit)] <- NA
-      everest_low <- aggregate(mapRaster$mapRaster, fact=mapRaster$mapRaster@nrows/as.numeric(input$tableSize))
+      #bottomLimit <- mean(values(mapRaster$mapRaster)) - 4*(sd(values(mapRaster$mapRaster)))
+      #values(mapRaster$mapRaster)[which(values(mapRaster$mapRaster)<bottomLimit)] <- NA
+      #print(mapRaster$mapRaster@nrows)
+      #print(as.numeric(input$tableSize))
+      #pixelateFactor <- mapRaster$mapRaster@nrows/as.numeric(input$tableSize)
+      #print(pixelateFactor)
+      #everest_low <- aggregate(mapRaster$mapRaster, fact=pixelateFactor)
+      #print(dim(everest_low))
+      
+      everest_low <- resample(mapRaster$mapRaster, raster(nrow=as.numeric(input$tableSize), ncol=as.numeric(input$tableSize), 
+                                                          xmn=mapRaster$mapRaster@extent@xmin, xmx=mapRaster$mapRaster@extent@xmax, 
+                                                          ymn=mapRaster$mapRaster@extent@ymin, ymx=mapRaster$mapRaster@extent@ymax))
       everest.matrix <- as.matrix(everest_low)
       yRange <- everest_low@extent@ymax-everest_low@extent@ymin
       xRange <- everest_low@extent@xmax-everest_low@extent@xmin
