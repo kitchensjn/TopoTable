@@ -170,4 +170,14 @@ server <- function(input, output, session) {
     }
   })
   
+  output$logo <- renderImage({
+    list(
+      src="www/TopoTableLogo.png",
+      contentType="image/png",
+      width=300,
+      height=300,
+      alt="Terrain"
+    )
+  }, deleteFile=FALSE)
+  
 }
